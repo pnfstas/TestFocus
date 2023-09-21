@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<title>Test focus</title>
+</head>
+<body>
+	<form action="javascript:void(0);" method="post" style="width:500px;height:300px;display:flex;flex-direction:column;align-items:stretch;justify-content:space-between;">
+		<fieldset style="flex:auto;display:flex;flex-direction:column;justify-content:space-evenly;">
+			<legend>Authentication</legend>
+			<label id="username-label" for="UserName">User name:</label>
+			<input class="user-property-input" id="UserName" name="UserName" type="text" />
+			<label id="email-label" for="Email">E-Mail:</label>
+			<input class="user-property-input" id="Email" name="Email" type="email" />
+			<label id="phone-label" for="PhoneNumber">Phone number:</label>
+			<input class="user-property-input" id="PhoneNumber" name="PhoneNumber" type="tel" />
+		</fieldset>
+		<span id="test-focus-span" style="margin-top:15px;"></span>
+	</form>
+	<script id="start" src="~/src/start.js" asp-append-version="true"></script>
+</body>
+</html>
